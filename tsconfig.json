@@ -1,0 +1,29 @@
+{
+  "compilerOptions": {
+    "target": "ES2022",
+    "module": "ESNext",
+    "moduleResolution": "node",
+    "baseUrl": ".",
+    "paths": {
+      "@vexa-sdk/core": ["packages/core/dist/*", "packages/core/src"],
+      "@vexa-sdk/core/*": ["packages/core/dist/*", "packages/core/src/*"],
+      "@vexa-sdk/liquidity-radar": ["packages/liquidity-radar/dist/*", "packages/liquidity-radar/src"],
+      "@vexa-sdk/liquidity-radar/*": ["packages/liquidity-radar/dist/*", "packages/liquidity-radar/src/*"],
+      "@vexa-sdk/wallet-automator": ["packages/wallet-automator/dist/*", "packages/wallet-automator/src"],
+      "@vexa-sdk/wallet-automator/*": ["packages/wallet-automator/dist/*", "packages/wallet-automator/src/*"],
+      "@vexa-sdk/cli": ["packages/cli/dist/*", "packages/cli/src"],
+      "@vexa-sdk/cli/*": ["packages/cli/dist/*", "packages/cli/src/*"],
+      "@vexa-sdk/example-app": ["packages/example-app/dist/*", "packages/example-app/src"],
+      "@vexa-sdk/example-app/*": ["packages/example-app/dist/*", "packages/example-app/src/*"]
+    },
+    "strict": true,
+    "esModuleInterop": true,
+    "skipLibCheck": true,
+    "forceConsistentCasingInFileNames": true,
+    "declaration": false,
+    "declarationMap": false,
+    "sourceMap": true,
+    "types": ["node"]
+  },
+  "exclude": ["node_modules", "dist", "**/*.test.ts"]
+}

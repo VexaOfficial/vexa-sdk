@@ -1,0 +1,1 @@
+export { WalletAutomator } from './WalletAutomator';

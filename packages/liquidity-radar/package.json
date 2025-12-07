@@ -1,0 +1,30 @@
+{
+  "name": "@vexa-sdk/liquidity-radar",
+  "version": "1.0.0",
+  "description": "Liquidity Pulse Radar for monitoring pool liquidity changes",
+  "main": "dist/index.mjs",
+  "types": "dist/index.d.mts",
+  "bin": {
+    "vexa-watch": "dist/cli/watch.js"
+  },
+  "scripts": {
+    "build": "tsup",
+    "test": "vitest",
+    "lint": "eslint src/**/*.ts",
+    "format": "prettier --write src/**/*.ts",
+    "start": "node dist/cli/watch.js"
+  },
+  "dependencies": {
+    "@vexa-sdk/core": "workspace:*",
+    "@solana/web3.js": "^1.87.0",
+    "@solana/spl-token": "^0.3.0",
+    "commander": "^11.0.0",
+    "node-fetch": "^3.0.0"
+  },
+  "devDependencies": {
+    "@types/node": "^20.0.0",
+    "@types/node-fetch": "^2.6.0",
+    "tsup": "^8.0.0",
+    "vitest": "^1.0.0"
+  }
+}

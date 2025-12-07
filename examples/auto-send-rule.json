@@ -1,0 +1,16 @@
+{
+  "name": "Auto-send on liquidity remove",
+  "trigger": {
+    "type": "liquidityRemove",
+    "threshold": 10000
+  },
+  "actions": [
+    {
+      "type": "autoSend",
+      "params": {
+        "to": "COLD_WALLET_ADDRESS",
+        "amount": 1000000
+      }
+    }
+  ]
+}

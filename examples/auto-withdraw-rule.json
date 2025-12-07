@@ -1,0 +1,16 @@
+{
+  "name": "Auto-withdraw LP on large remove",
+  "trigger": {
+    "type": "liquidityRemove",
+    "threshold": 50000
+  },
+  "actions": [
+    {
+      "type": "autoWithdrawLP",
+      "params": {
+        "poolAddress": "POOL_ADDRESS",
+        "amount": 1000000000
+      }
+    }
+  ]
+}

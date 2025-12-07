@@ -1,0 +1,22 @@
+{
+  "name": "@vexa-sdk/core",
+  "version": "1.0.0",
+  "description": "Core utilities and types for Vexa SDK",
+  "main": "dist/index.mjs",
+  "types": "dist/index.d.mts",
+  "scripts": {
+    "build": "tsup",
+    "test": "vitest",
+    "lint": "eslint src/**/*.ts",
+    "format": "prettier --write src/**/*.ts"
+  },
+  "dependencies": {
+    "@solana/web3.js": "^1.87.0",
+    "p-retry": "^6.0.0"
+  },
+  "devDependencies": {
+    "@types/node": "^20.0.0",
+    "tsup": "^8.0.0",
+    "vitest": "^1.0.0"
+  }
+}
